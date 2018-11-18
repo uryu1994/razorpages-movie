@@ -475,3 +475,6 @@ ASALocalRun/
 .localhistory/
 
 # End of https://www.gitignore.io/api/aspnetcore,visualstudio,visualstudiocode
+
+# SQLite
+*.db
