@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesMovie", "RazorPagesMovie\RazorPagesMovie.csproj", "{3AF58398-20CF-4F2E-8562-99D3F1D44975}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesMovie.Domain", "RazorPagesMovie.Domain\RazorPagesMovie.Domain.csproj", "{C036A0C1-37D9-4F4A-A2BC-8D0C92E952AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{3AF58398-20CF-4F2E-8562-99D3F1D44975}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AF58398-20CF-4F2E-8562-99D3F1D44975}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AF58398-20CF-4F2E-8562-99D3F1D44975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C036A0C1-37D9-4F4A-A2BC-8D0C92E952AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C036A0C1-37D9-4F4A-A2BC-8D0C92E952AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C036A0C1-37D9-4F4A-A2BC-8D0C92E952AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C036A0C1-37D9-4F4A-A2BC-8D0C92E952AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
