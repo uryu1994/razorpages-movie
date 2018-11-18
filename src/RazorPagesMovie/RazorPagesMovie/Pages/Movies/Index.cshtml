@@ -10,6 +10,13 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+<form>
+    <p>
+        Title:<input asp-for="Condition.Title_like" />
+        ReleaseDate:<input asp-for="Condition.ReleaseDate_ge" />〜<input asp-for="Condition.ReleaseDate_le" />
+        <input type="submit" value="検索" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>

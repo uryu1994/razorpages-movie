@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LinqKit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RazorPagesMovie.Domain.Entities;
 
@@ -20,9 +22,14 @@ namespace RazorPagesMovie.Pages.Movies
 
         public IList<Movie> Movie { get;set; }
 
-        public async Task OnGetAsync()
+        public MovieCondition Condition { get; set; }
+
+        public async Task OnGetAsync(MovieCondition condition)
         {
-            Movie = await _context.Movie.ToListAsync();
+            var predicate = condition.CreatePredicate().Expand();
+            Movie = await _context.Movie
+                                  .Where(predicate)
+                                  .ToListAsync();
         }
     }
 }

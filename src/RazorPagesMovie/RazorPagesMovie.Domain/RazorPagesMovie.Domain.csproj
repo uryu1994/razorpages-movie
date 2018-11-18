@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <Folder Include="Entities\" />
+    <Folder Include="Framework\" />
+    <Folder Include="Framework\LinqKit\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
